@@ -1,0 +1,29 @@
+object Form1: TForm1
+  Left = 934
+  Height = 248
+  Top = 287
+  Width = 310
+  Caption = 'Form1'
+  ClientHeight = 248
+  ClientWidth = 310
+  Color = clMenuBar
+  LCLVersion = '1.8.2.0'
+  object Button1: TButton
+    Left = 32
+    Height = 25
+    Top = 120
+    Width = 75
+    Caption = 'Зелений'
+    OnMouseEnter = Button1MouseEnter
+    TabOrder = 0
+  end
+  object Button2: TButton
+    Left = 208
+    Height = 25
+    Top = 120
+    Width = 75
+    Caption = 'Червоний'
+    OnMouseEnter = Button2MouseEnter
+    TabOrder = 1
+  end
+end
