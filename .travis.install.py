@@ -42,6 +42,7 @@ def install_osx_dmg(dmg):
     return True
 
 def install_lazarus_default():
+    os.system('echo "deb http://deb.debian.org/debian jessie-backports main" >> /etc/apt/sources.list && apt update')
     if OS_NAME == 'linux':
         # Make sure nogui is installed for headless runs
         pkg = 'lazarus lcl-nogui lua5.3'
@@ -54,6 +55,7 @@ def install_lazarus_default():
     return os.system('%s install %s' % (OS_PMAN, pkg)) == 0
 
 def install_lazarus_version(ver,rel,env):
+    os.system('echo "deb http://deb.debian.org/debian jessie-backports main" >> /etc/apt/sources.list && apt update')
     # Download all files in directory for specified Lazarus version
     osn = env or OS_NAME
     tgt = LAZ_BIN_TGT[osn] % {'release': rel or LAZ_REL_DEF[osn]}
