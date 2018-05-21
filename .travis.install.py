@@ -44,7 +44,7 @@ def install_osx_dmg(dmg):
 def install_lazarus_default():
     if OS_NAME == 'linux':
         # Make sure nogui is installed for headless runs
-        os.system('wget http://mirrors.kernel.org/ubuntu/pool/universe/l/lua5.3/lua5.3_5.3.1-1ubuntu2_amd64.deb && dpkg -i lua5.3_5.3.1-1ubuntu2_amd64.deb && apt-get update && apt-get install -f && dpkg -i lua5.3_5.3.1-1ubuntu2_amd64.deb')
+        os.system('wget http://mirrors.kernel.org/ubuntu/pool/universe/l/lua5.3/lua5.3_5.3.1-1ubuntu2_amd64.deb && sudo dpkg -i *lua5.3*ubuntu*.deb && apt-get update && apt-get install -f && sudo dpkg -i *lua5.3*ubuntu*.deb')
         pkg = 'lazarus lcl-nogui'
     elif OS_NAME == 'osx':
         # Install brew cask first
@@ -85,7 +85,7 @@ def install_lazarus_version(ver,rel,env):
         process_file = lambda f: (not f.endswith('.deb')) or os.system('sudo dpkg --force-overwrite -i %s' % (f)) == 0
     elif osn == 'linux':
         # Install dependencies
-        os.system('wget http://mirrors.kernel.org/ubuntu/pool/universe/l/lua5.3/lua5.3_5.3.1-1ubuntu2_amd64.deb && dpkg -i lua5.3_5.3.1-1ubuntu2_amd64.deb && apt-get update && apt-get install -f && dpkg -i lua5.3_5.3.1-1ubuntu2_amd64.deb')
+        os.system('wget http://mirrors.kernel.org/ubuntu/pool/universe/l/lua5.3/lua5.3_5.3.1-1ubuntu2_amd64.deb && sudo dpkg -i *lua5.3*ubuntu*.deb && apt-get update && apt-get install -f && sudo dpkg -i *lua5.3*ubuntu*.deb')
         if os.system('%s install libgtk2.0-dev lua5.3' % (OS_PMAN)) != 0:
             return False
 
