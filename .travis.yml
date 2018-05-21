@@ -25,7 +25,7 @@ install:
   - ./.travis.install.py
 
 script:
-  - find . ! -name ' 7' -type d -exec lazbuild $LAZ_OPT {}/project.lpi \; # Build all projects
+  - find . ! -name ' 7' -type d -maxdepth 1 -exec lazbuild $LAZ_OPT {}/project.lpi \; # Build almost all projects
 
 notifications:
   email:
