@@ -44,7 +44,7 @@ def install_osx_dmg(dmg):
 def install_lazarus_default():
     if OS_NAME == 'linux':
         # Make sure nogui is installed for headless runs
-        pkg = 'lazarus lcl-nogui lua5.3'
+        pkg = 'lazarus lcl-nogui'
     elif OS_NAME == 'osx':
         # Install brew cask first
         pkg = 'fpc caskroom/cask/brew-cask && %s cask install fpcsrc lazarus' % (OS_PMAN)
@@ -84,7 +84,7 @@ def install_lazarus_version(ver,rel,env):
         process_file = lambda f: (not f.endswith('.deb')) or os.system('sudo dpkg --force-overwrite -i %s' % (f)) == 0
     elif osn == 'linux':
         # Install dependencies
-        if os.system('%s install libgtk2.0-dev lua5.3' % (OS_PMAN)) != 0:
+        if os.system('%s install libgtk2.0-dev' % (OS_PMAN)) != 0:
             return False
 
         # Install all .deb files

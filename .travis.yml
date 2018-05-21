@@ -19,15 +19,13 @@ env:
 before_install:
   # Start virtual display server
   - Xvfb $DISPLAY &
-  # Add repo for lua 5.3
-  - sudo add-apt-repository 'deb http://mirrors.kernel.org/ubuntu xenial main universe'
 
 install:
   # Install prerequisites (fpc/lazarus/wine/qemu)
   - ./.travis.install.py
 
 script:
-  - lazbuild $LAZ_OPT */project.lpi               # Build all projects
+  - find . ! -name ' 7' -type d -exec lazbuild $LAZ_OPT {}/project.lpi \; # Build all projects
 
 notifications:
   email:
