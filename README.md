@@ -2,5 +2,5 @@
 
 Кожен проект збережений як `Завдання #/project.lpi`
 
-Результат автоматичної компіляції всіх проектів:
+Результат автоматичної компіляції проектів:
 [![Build Status](https://img.shields.io/travis/KaMeHb-UA/Diploma-18.svg?style=flat-square)](https://travis-ci.org/KaMeHb-UA/Diploma-18)
