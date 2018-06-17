@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+		<title>Марченко В.В. – Вивчення програмування в курсі інформатики основної школи на прикладі середовища Lazarus</title>
 
 		<link rel="stylesheet" href="css/reveal.css">
 		<link rel="stylesheet" href="css/theme/black.css">
@@ -20,14 +20,31 @@
 			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
 			document.getElementsByTagName( 'head' )[0].appendChild( link );
 		</script>
+		<style>
+			.hide-link{
+				color: #fff !important;
+				text-decoration: none !important;
+			}
+			table{
+				font-size: 12px !important;
+			}
+		</style>
 	</head>
 	<body>
 		<div class="reveal">
 			<div class="slides">
 				<section>
-					<h5>Вивчення програмування в курсі інформатики основної школи на прикладі середовища Lazarus</h5>
+					<h5>
+						Вивчення програмування в курсі інформатики основної школи
+						на прикладі середовища Lazarus
+					</h5>
 					<p>
-						<small>Виконавець: <a href="mailto:marlock@etlgr.com">Марченко В.В.</a>; науковий керівник: <a href="mailto:sergpeter2008@gmail.com">Петренко С.І.</a></small>
+						<small>
+							Виконавець:
+							<a href="mailto:marlock@etlgr.com">Марченко В.В.</a>;
+							науковий керівник:
+							<a href="mailto:sergpeter2008@gmail.com">Петренко С.І.</a>
+						</small>
 					</p>
 				</section>
 				<section>
@@ -42,6 +59,619 @@
 					<b>Предмет дослідження</b> – методика навчання учнів 8 класу з теми
 					«Алгоритми та програми» на основі середовища Lazarus.
 				</section>
+				<section>
+						<section>
+							Для реалізації поставленої мети розв’язувалися наступні <b>завдання</b>:
+							<ol>
+								<li><a href="#/3/1" class="hide-link">
+									Проаналізувати навчальні програми з інформатики для 5-9 класів
+								</a></li>
+								<li><a href="#/3/2" class="hide-link">
+									Розглянути доцільність вивчення мови програмування Lazarus
+								</a></li>
+								<li><a href="#/3/3" class="hide-link">
+									Розробити практичні завдання
+								</a></li>
+								<li><a href="#/3/4" class="hide-link">
+									Розробити методичні рекомендації до практичних завдань
+								</a></li>
+							</ol>
+						</section>
+						<section>
+							<h5>Навчальні програми</h5>
+							<p>
+								Проаналізувавши навчальні програми для 5-9 класів, було виявлено,
+								що програма для учнів, що вивчали інформатику в 2-4 класах,
+								є більш розширеною за своєю структурою, проте програма для учнів,
+								що не вивчали інформатику в молодших класах
+								<table>
+									<tbody>
+										<tr>
+											<td rowspan="2" width="208" style="background:linear-gradient(to top right, transparent 49.5%, #fff 50.5%, transparent 50.5%)">
+												<div style="text-align: right;
+												padding-right: 10px;
+												padding-top: 5px;
+												margin-bottom: -5px;">Клас</div>
+												Тема
+											</td>
+											<td colspan="2" width="85">
+												5
+											</td>
+											<td colspan="2" width="85">
+												6
+											</td>
+											<td colspan="2" width="85">
+												7
+											</td>
+											<td colspan="2" width="85">
+												8
+											</td>
+											<td colspan="2" width="85">
+												9
+											</td>
+										</tr>
+										<tr>
+											<td width="42">
+												п.1
+											</td>
+											<td width="42">
+												п.2
+											</td>
+											<td width="42">
+												п.1
+											</td>
+											<td width="42">
+												п.2
+											</td>
+											<td width="42">
+												п.1
+											</td>
+											<td width="42">
+												п.2
+											</td>
+											<td width="42">
+												п.1
+											</td>
+											<td width="42">
+												п.2
+											</td>
+											<td width="42">
+												п.1
+											</td>
+											<td width="42">
+												п.2
+											</td>
+										</tr>
+										<tr>
+											<td width="208">
+												Поняття&nbsp;алгоритму
+											</td>
+											<td width="42">
+												&nbsp;
+											</td>
+											<td width="42">
+												+
+											</td>
+											<td width="42">
+												+
+											</td>
+											<td width="42">
+												&nbsp;
+											</td>
+											<td width="42">
+												&nbsp;
+											</td>
+											<td width="42">
+												&nbsp;
+											</td>
+											<td width="42">
+												&nbsp;
+											</td>
+											<td width="42">
+												&nbsp;
+											</td>
+											<td width="42">
+												&nbsp;
+											</td>
+											<td width="42">
+												&nbsp;
+											</td>
+										</tr>
+										<tr>
+											<td width="208">
+												Алгоритмічні&nbsp;структури
+											</td>
+											<td width="42">
+												&nbsp;
+											</td>
+											<td width="42">
+												+
+											</td>
+											<td width="42">
+												+
+											</td>
+											<td width="42">
+												&nbsp;
+											</td>
+											<td width="42">
+												+
+											</td>
+											<td width="42">
+												&nbsp;
+											</td>
+											<td width="42">
+												&nbsp;
+											</td>
+											<td width="42">
+												&nbsp;
+											</td>
+											<td width="42">
+												&nbsp;
+											</td>
+											<td width="42">
+												&nbsp;
+											</td>
+										</tr>
+										<tr>
+											<td width="208">
+												Складання алгоритмів
+											</td>
+											<td width="42">
+												&nbsp;
+											</td>
+											<td width="42">
+												+
+											</td>
+											<td width="42">
+												+
+											</td>
+											<td width="42">
+												&nbsp;
+											</td>
+											<td width="42">
+												&nbsp;
+											</td>
+											<td width="42">
+												&nbsp;
+											</td>
+											<td width="42">
+												&nbsp;
+											</td>
+											<td width="42">
+												&nbsp;
+											</td>
+											<td width="42">
+												&nbsp;
+											</td>
+											<td width="42">
+												&nbsp;
+											</td>
+										</tr>
+										<tr>
+											<td width="208">
+												Вибір&nbsp;алгоритмічної структури&nbsp;для розв&rsquo;язування задачі
+											</td>
+											<td width="42">
+												&nbsp;
+											</td>
+											<td width="42">
+												+
+											</td>
+											<td width="42">
+												&nbsp;
+											</td>
+											<td width="42">
+												&nbsp;
+											</td>
+											<td width="42">
+												&nbsp;
+											</td>
+											<td width="42">
+												&nbsp;
+											</td>
+											<td width="42">
+												&nbsp;
+											</td>
+											<td width="42">
+												&nbsp;
+											</td>
+											<td width="42">
+												&nbsp;
+											</td>
+											<td width="42">
+												&nbsp;
+											</td>
+										</tr>
+										<tr>
+											<td width="208">
+												Вкладені алгоритмічні структури
+											</td>
+											<td width="42">
+												&nbsp;
+											</td>
+											<td width="42">
+												&nbsp;
+											</td>
+											<td width="42">
+												&nbsp;
+											</td>
+											<td width="42">
+												+
+											</td>
+											<td width="42">
+												&nbsp;
+											</td>
+											<td width="42">
+												&nbsp;
+											</td>
+											<td width="42">
+												&nbsp;
+											</td>
+											<td width="42">
+												&nbsp;
+											</td>
+											<td width="42">
+												&nbsp;
+											</td>
+											<td width="42">
+												&nbsp;
+											</td>
+										</tr>
+										<tr>
+											<td width="208">
+												Структура програми
+											</td>
+											<td width="42">
+												&nbsp;
+											</td>
+											<td width="42">
+												&nbsp;
+											</td>
+											<td width="42">
+												&nbsp;
+											</td>
+											<td width="42">
+												&nbsp;
+											</td>
+											<td width="42">
+												&nbsp;
+											</td>
+											<td width="42">
+												&nbsp;
+											</td>
+											<td width="42">
+												&nbsp;
+											</td>
+											<td width="42">
+												+
+											</td>
+											<td width="42">
+												&nbsp;
+											</td>
+											<td width="42">
+												&nbsp;
+											</td>
+										</tr>
+										<tr>
+											<td width="208">
+												Сучасні мови програмування та їх елементи
+											</td>
+											<td width="42">
+												&nbsp;
+											</td>
+											<td width="42">
+												&nbsp;
+											</td>
+											<td width="42">
+												&nbsp;
+											</td>
+											<td width="42">
+												&nbsp;
+											</td>
+											<td width="42">
+												&nbsp;
+											</td>
+											<td width="42">
+												&nbsp;
+											</td>
+											<td width="42">
+												&nbsp;
+											</td>
+											<td width="42">
+												+
+											</td>
+											<td width="42">
+												&nbsp;
+											</td>
+											<td width="42">
+												&nbsp;
+											</td>
+										</tr>
+										<tr>
+											<td width="208">
+												Поняття&nbsp;об&rsquo;єкту&nbsp;та&nbsp;його властивостей
+											</td>
+											<td width="42">
+												&nbsp;
+											</td>
+											<td width="42">
+												&nbsp;
+											</td>
+											<td width="42">
+												&nbsp;
+											</td>
+											<td width="42">
+												+
+											</td>
+											<td width="42">
+												&nbsp;
+											</td>
+											<td width="42">
+												&nbsp;
+											</td>
+											<td width="42">
+												+
+											</td>
+											<td width="42">
+												&nbsp;
+											</td>
+											<td width="42">
+												&nbsp;
+											</td>
+											<td width="42">
+												&nbsp;
+											</td>
+										</tr>
+										<tr>
+											<td width="208">
+												Методи об&rsquo;єкта
+											</td>
+											<td width="42">
+												&nbsp;
+											</td>
+											<td width="42">
+												&nbsp;
+											</td>
+											<td width="42">
+												&nbsp;
+											</td>
+											<td width="42">
+												&nbsp;
+											</td>
+											<td width="42">
+												&nbsp;
+											</td>
+											<td width="42">
+												&nbsp;
+											</td>
+											<td width="42">
+												+
+											</td>
+											<td width="42">
+												+
+											</td>
+											<td width="42">
+												&nbsp;
+											</td>
+											<td width="42">
+												&nbsp;
+											</td>
+										</tr>
+										<tr>
+											<td width="208">
+												Поняття події
+											</td>
+											<td width="42">
+												&nbsp;
+											</td>
+											<td width="42">
+												&nbsp;
+											</td>
+											<td width="42">
+												&nbsp;
+											</td>
+											<td width="42">
+												+
+											</td>
+											<td width="42">
+												&nbsp;
+											</td>
+											<td width="42">
+												&nbsp;
+											</td>
+											<td width="42">
+												+
+											</td>
+											<td width="42">
+												&nbsp;
+											</td>
+											<td width="42">
+												&nbsp;
+											</td>
+											<td width="42">
+												&nbsp;
+											</td>
+										</tr>
+										<tr>
+											<td width="208">
+												Поняття величини, змінної, операції присвоєння
+											</td>
+											<td width="42">
+												&nbsp;
+											</td>
+											<td width="42">
+												&nbsp;
+											</td>
+											<td width="42">
+												&nbsp;
+											</td>
+											<td width="42">
+												&nbsp;
+											</td>
+											<td width="42">
+												&nbsp;
+											</td>
+											<td width="42">
+												+
+											</td>
+											<td width="42">
+												+
+											</td>
+											<td width="42">
+												&nbsp;
+											</td>
+											<td width="42">
+												&nbsp;
+											</td>
+											<td width="42">
+												&nbsp;
+											</td>
+										</tr>
+										<tr>
+											<td width="208">
+												Використання змінних у алгоритмах
+											</td>
+											<td width="42">
+												&nbsp;
+											</td>
+											<td width="42">
+												&nbsp;
+											</td>
+											<td width="42">
+												&nbsp;
+											</td>
+											<td width="42">
+												&nbsp;
+											</td>
+											<td width="42">
+												&nbsp;
+											</td>
+											<td width="42">
+												+
+											</td>
+											<td width="42">
+												&nbsp;
+											</td>
+											<td width="42">
+												&nbsp;
+											</td>
+											<td width="42">
+												&nbsp;
+											</td>
+											<td width="42">
+												&nbsp;
+											</td>
+										</tr>
+										<tr>
+											<td width="208">
+												Поняття константи
+											</td>
+											<td width="42">
+												&nbsp;
+											</td>
+											<td width="42">
+												&nbsp;
+											</td>
+											<td width="42">
+												&nbsp;
+											</td>
+											<td width="42">
+												&nbsp;
+											</td>
+											<td width="42">
+												&nbsp;
+											</td>
+											<td width="42">
+												&nbsp;
+											</td>
+											<td width="42">
+												&nbsp;
+											</td>
+											<td width="42">
+												+
+											</td>
+											<td width="42">
+												&nbsp;
+											</td>
+											<td width="42">
+												&nbsp;
+											</td>
+										</tr>
+										<tr>
+											<td width="208">
+												Одновимірні масиви
+											</td>
+											<td width="42">
+												&nbsp;
+											</td>
+											<td width="42">
+												&nbsp;
+											</td>
+											<td width="42">
+												&nbsp;
+											</td>
+											<td width="42">
+												&nbsp;
+											</td>
+											<td width="42">
+												&nbsp;
+											</td>
+											<td width="42">
+												&nbsp;
+											</td>
+											<td width="42">
+												&nbsp;
+											</td>
+											<td width="42">
+												&nbsp;
+											</td>
+											<td width="42">
+												+
+											</td>
+											<td width="42">
+												+
+											</td>
+										</tr>
+										<tr>
+											<td width="208">
+												Методи опрацювання елементів масиву
+											</td>
+											<td width="42">
+												&nbsp;
+											</td>
+											<td width="42">
+												&nbsp;
+											</td>
+											<td width="42">
+												&nbsp;
+											</td>
+											<td width="42">
+												&nbsp;
+											</td>
+											<td width="42">
+												&nbsp;
+											</td>
+											<td width="42">
+												&nbsp;
+											</td>
+											<td width="42">
+												&nbsp;
+											</td>
+											<td width="42">
+												&nbsp;
+											</td>
+											<td width="42">
+												+
+											</td>
+											<td width="42">
+												+
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</p>
+						</section>
+				</section>
 			</div>
 		</div>
 
@@ -53,6 +683,7 @@
 			// - https://github.com/hakimel/reveal.js#configuration
 			// - https://github.com/hakimel/reveal.js#dependencies
 			Reveal.initialize({
+				history: true,
 				dependencies: [
 					{ src: 'plugin/markdown/marked.js' },
 					{ src: 'plugin/markdown/markdown.js' },
